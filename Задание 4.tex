@@ -1,0 +1,314 @@
+
+\newpage
+\section{Задание 4}
+ {\bf\large Условие} \\Вычислить пределы:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item
+              \[
+                  \lim_{x\rightarrow -1}{\frac
+                      {x^3-3x-2}
+                      {(x^2-x-2)^2}}
+              \]
+        \item
+              \[
+                  \lim_{x\rightarrow  3}{\frac
+                      {\sqrt[3]{9x}-3}
+                      {\sqrt{3+x}-\sqrt{2x}}}
+              \]
+        \item
+              \[
+                  \lim_{x\rightarrow 1}{\frac
+                  {1+\cos{\pi x}}
+                  {\tg^2{\pi x}}}
+              \]
+        \item
+              \[
+                  \lim_{x\rightarrow a}{\frac
+                  {\ln{( \cos{\frac{\pi x}{a}}+2)}}
+                  {a^{\frac{a^2}{x^2}-\frac{a}{x}}-a^{\frac{a}{x}-1}}}
+              \]
+        \item
+              \[
+                  \lim_{x\rightarrow  0}{
+                  (2-5^{\arcsin{x^3}})^\frac{(\cosec^2{x})}{x}
+                  }
+              \]
+        \item
+              \[
+                  \lim_{x\rightarrow  \frac{\pi}{2} \pm 0}{
+                      (0.5+\cos{3x})^{\sec{x}}
+                  }
+              \]
+        \item
+              \[
+                  \lim_{x\rightarrow  \frac{\pi}{2}}{
+                      \frac{2+\cos{x}\sin{\frac{2}{2x-\pi}}}{3+2x\sin{x}}
+                  }
+              \]
+        \item
+              \[
+                  \lim_{x\rightarrow  2}{
+                      \frac{\arctg{(x^2-3)}+\arctg{(x^2-5)}}{\ln{(x-1)}}
+                  }
+              \]
+    \end{enumerate}
+\end{multicols}
+\newpage
+{\bf\large Ход решения}
+\begin{enumerate}
+    \item
+          \begin{gather*}
+              \lim_{x\rightarrow -1}{\frac
+                  {x^3-3x-2}
+                  {(x^2-x-2)^2}} \\
+              \text{Вид неопределенности: }{\left[\frac{0}{0}\right]} \\
+              \lim_{x\rightarrow -1}{\frac
+                  {x^3-3x-2}
+                  {(x^2-x-2)^2}} =
+              \lim_{x\rightarrow -1}{\frac
+                  {(x^2-x-2)(x+1)}
+                  {(x^2-x-2)^2}} =
+              \lim_{x\rightarrow -1}{\frac
+                  {x+1}
+                  {x^2-x-2}} =
+              \lim_{t\rightarrow 0}{\frac
+                  {t-1+1}
+                  {(t-1)^2-(t-1)-2}} = \\ =
+              \lim_{t\rightarrow 0}{\frac
+                  {t}
+                  {t^2-2t+1-t+1-2}} =
+              \lim_{t\rightarrow 0}{\frac
+                  {t}
+                  {t^2-3t}} =
+              \lim_{t\rightarrow 0}{\frac
+                  {\frac{t}{t}}
+                  {\frac{t^2}{t}-\frac{3t}{t}}} =
+              \lim_{t\rightarrow 0}{\frac
+                  {1}
+                  {t-3}} =
+              -\frac{1}{3}
+          \end{gather*}
+          {\bf Ответ:} $-\frac{1}{3}$
+    \item
+          \begin{gather*}
+              \lim_{x\rightarrow 3}{\frac
+                  {\sqrt[3]{9x}-3}
+                  {\sqrt{3+x}-\sqrt{2x}}} \\
+              \text{Вид неопределенности: }{\left[\frac{0}{0}\right]} \\
+              \lim_{x\rightarrow 3}{\frac
+                  {\sqrt[3]{9x}-3}
+                  {\sqrt{3+x}-\sqrt{2x}}} =
+              \lim_{t\rightarrow 0}{\frac
+                  {\sqrt[3]{9t+27}-3}
+                  {\sqrt{t+6}-\sqrt{2t+6}}} =
+              \lim_{t\rightarrow 0}{\frac
+                  {3\sqrt[3]{\frac{t}{3}+1}-3}
+                  {\sqrt{6}\sqrt{\frac{t}{6}+1}-\sqrt{6}\sqrt{\frac{t}{3}+1}}} = \\
+              = \lim_{t\rightarrow 0}{\frac
+              {3(1+\frac{t}{9}+o(t))-3}
+              {\sqrt{6}(1+\frac{t}{12}+o(t))-\sqrt{6}(1+\frac{t}{6}+o(t))}} =
+              \lim_{t\rightarrow 0}{\frac
+                  {\frac{t}{3}+o(t)}
+                  {\frac{\sqrt{6}t}{12}-\frac{\sqrt{6}t}{6}+o(t)}} =
+              \lim_{t\rightarrow 0}{\frac
+                  {\frac{t}{3}+o(t)}
+                  {-\frac{\sqrt{6}t}{12}+o(t)}} = \\
+              = \lim_{t\rightarrow 0}{\frac
+                  {\frac{1}{3}+o(1)}
+                  {-\frac{\sqrt{6}}{12}+o(1)}} =
+              \frac{\frac{1}{3}}{-\frac{\sqrt{6}}{12}} =
+              -\frac{2\sqrt{6}}{3}
+          \end{gather*}
+          {\bf Ответ:} $-\frac{2\sqrt{6}}{3}$
+    \item
+          \begin{gather*}
+              \lim_{x\rightarrow  1}{\frac
+              {1+\cos{\pi x}}
+              {\tg^2{\pi x}}} \\
+              \text{Вид неопределенности: }{\left[\frac{0}{0}\right]} \\
+              \lim_{x\rightarrow  1}{\frac
+              {1+\cos{\pi x}}
+              {\tg^2{\pi x}}} =
+              \lim_{t\rightarrow  0}{\frac
+              {1+\cos{\pi t + \pi}}
+              {\tg^2{\pi t + \pi}}} =
+              \lim_{t\rightarrow  0}{\frac
+              {1-\cos{\pi t}}
+              {\tg^2{\pi t}}} =
+              \lim_{t\rightarrow  0}{\frac
+                  {1-(1-\frac{\pi^2 t^2}{2}+o(t^2))}
+                  {(\pi t + o(t))^2}} = \\
+              = \lim_{t\rightarrow  0}{\frac
+                  {\frac{\pi^2 t^2}{2}+o(t^2)}
+                  {\pi^2 t^2 + o(t) \pi t+ o(t^2)}} =
+              \lim_{t\rightarrow  0}{\frac
+                  {\frac{\pi^2 t^2}{2}+o(t^2)}
+                  {\pi^2 t^2 + o(t^2)}} =
+              \lim_{t\rightarrow  0}{\frac
+                  {\frac{\pi^2}{2}+o(1)}
+                  {\pi^2 + o(1)}} =
+              \frac{1}{2}
+          \end{gather*}
+          {\bf Ответ:} $\frac{1}{2}$
+          \newpage
+    \item
+          \begin{gather*}
+              \lim_{x\rightarrow  a}{\frac
+              {\ln{( \cos{\frac{\pi x}{a}}+2)}}
+              {a^{\frac{a^2}{x^2}-\frac{a}{x}}-a^{\frac{a}{x}-1}}}\\
+              \text{Вид неопределенности: }{\left[\frac{0}{0}\right]} \\
+              \lim_{x\rightarrow  a}{\frac
+              {\ln{( \cos{\frac{\pi x}{a}}+2)}}
+              {a^{\frac{a^2}{x^2}-\frac{a}{x}}-a^{\frac{a}{x}-1}}} =
+              \lim_{x\rightarrow  a}{\frac
+                  {\ln{( \cos{\frac{\pi x}{a}}+2)}}
+                  {a^{\frac{a}{x}-1}\left(a^{\frac{a^2}{x^2}-\frac{2a}{x}+1}-1\right)}} =
+              \lim_{t\rightarrow  0}{\frac
+                  {\ln{( \cos{\frac{\pi (t+a)}{a}}+2)}}
+                  {a^{\frac{a}{t+a}-1}\left(a^{\frac{a^2}{(t+a)^2}-\frac{2a}{t+a}+1}-1\right)}} = \\
+              = \lim_{t\rightarrow  0}{\frac
+                  {\ln{( \cos{(\frac{\pi t}{a}+\pi)}+2)}}
+                  {a^{\frac{a-t-a}{t+a}}\left(a^{\frac{a^2}{(t+a)^2}-\frac{2at+2a^2}{(t+a)^2}+\frac{(t+a)^2}{(t+a)^2}}-1\right)}} =
+              \lim_{t\rightarrow  0}{\frac
+                  {\ln{( -\cos{\frac{\pi t}{a}}+2)}}
+                  {a^{\frac{-t}{t+a}}\left(a^{\frac{a^2-2at-2a^2+t^2+2at+a^2}{(t+a)^2}}-1\right)}} = \\
+              = \lim_{t\rightarrow  0}{\frac
+                  {\ln{( -\cos{\frac{\pi t}{a}}+2)}}
+                  {a^{\frac{-t}{t+a}}\left(a^{\frac{t^2}{(t+a)^2}}-1\right)}} =
+              \lim_{t\rightarrow  0}{\frac
+                  {\ln{( -(1-\frac{\pi^2 t^2}{2a^2}+o(t^2))+2)}}
+                  {\left(1-\frac{t}{t+a}\ln(a)+o(t)\right)\left((1+\frac{t^2}{(t+a)^2}\ln(a)+o(t^2))-1\right)}} = \\
+              = \lim_{t\rightarrow  0}{\frac
+                  {\ln{(1+\frac{\pi^2 t^2}{2a^2}+o(t^2))}}
+                  {\left(1-\frac{t}{t+a}\ln(a)+o(t)\right)\left(\frac{t^2}{(t+a)^2}\ln(a)+o(t^2)\right)}} =\\
+              = \lim_{t\rightarrow  0}{\frac
+                  {\frac{\pi^2 t^2}{2a^2}+o(t^2)+o(\frac{\pi^2 t^2}{2a^2}+o(t^2))}
+                  {\frac{t^2}{(t+a)^2}\ln(a)+o(t^2)-\frac{t^3}{(t+a)^3}\ln^2(a)-\frac{t}{t+a}o(t^2)+\frac{t^2}{(t+a)^2}\ln(a)o(t)+o(t)o(t^2)}} \\
+              \text{Заметим, что: } o\left(\frac{t^k}{(a+t)^n}\right)=o(t^k) \text{, где k,n}  \in \mathbb{N} \text{ (ограниченная умножить на  } t^k \text{ )}\\
+              \text{Откуда: }
+              \lim_{t\rightarrow  0}{\frac
+                  {\frac{\pi^2 t^2}{2a^2}+o(t^2)+o(\frac{\pi^2 t^2}{2a^2}+o(t^2))}
+                  {\frac{t^2}{(t+a)^2}\ln(a)+o(t^2)-\frac{t^3}{(t+a)^3}\ln^2(a)-o(t^3)+o(t^3)}} =
+              \lim_{t\rightarrow  0}{\frac
+                  {\frac{\pi^2 t^2}{2a^2}+o(t^2)}
+                  {\frac{t^2}{(t+a)^2}\ln(a)+o(t^2)-\frac{t^3}{(t+a)^3}\ln^2(a)}} = \\
+              = \lim_{t\rightarrow  0}{\frac
+                  {\frac{\pi^2}{2a^2}+o(1)}
+                  {\frac{1}{(t+a)^2}\ln(a)+o(1)-\frac{t}{(t+a)^3}\ln^2(a)}} =
+              \frac
+              {\frac{\pi^2}{2a^2}}
+              {\frac{1}{a^2}\ln(a)-0} =
+              \frac{\pi^2}{2\ln(a)}
+          \end{gather*}
+          {\bf Ответ:} $\frac{\pi^2}{2\ln(a)}$
+    \item
+          \begin{gather*}
+              \lim_{x\rightarrow  0}{
+              (2-5^{\arcsin{x^3}})^\frac{(\cosec^2{x})}{x}} \\
+              \text{Вид неопределенности: }{\left[1^{\infty}\right]} \\
+              \lim_{x\rightarrow  0}{
+              (2-5^{(x^3+o(x^3))})^\frac{1}{x\sin^2{x}}} =
+              \lim_{x\rightarrow  0}{
+              (2-5^{(x^3+o(x^3))})^\frac{1}{x(x+o(x))^2}} =
+              \lim_{x\rightarrow  0}{
+                  (2-(1+(x^3+o(x^3))\ln{5}+o(x^3+o(x^3))))^\frac{1}{x^3+o(x^3)}} = \\
+              = \lim_{x\rightarrow  0}{
+                  (1-x^3\ln{5}+o(x^3))^{\left(\frac{1}{-x^3\ln{5}+o(x^3)}\frac{-x^3\ln{5}+o(x^3)}{x^3+o(x^3)}\right)}} =
+              \lim_{x\rightarrow  0}{
+                  e^{\left(\frac{-x^3\ln{5}+o(x^3)}{x^3+o(x^3)}\right)}} =
+              \lim_{x\rightarrow  0}{
+                  e^{\left(\frac{-\ln{5}+o(1)}{1+o(1)}\right)}} =
+              e^{-\ln{5}} = \frac{1}{5}
+          \end{gather*}
+          {\bf Ответ:} $\frac{1}{5}$
+    \item
+          \begin{gather*}
+              \lim_{x\rightarrow  \frac{\pi}{2} \pm 0}{
+                  (0.5+\cos{3x})^{\sec{x}}} \\
+              \\
+              \lim_{x\rightarrow  \frac{\pi}{2} \pm 0}{
+                  (0.5+\cos{3x})^{\sec{x}}} =
+              \lim_{t\rightarrow  0 \pm }{
+              \left(0.5+\cos{\left(3t+\frac{3\pi}{2}\right)}\right)^{\frac{1}{\cos{\left(\frac{\pi}{2}+t\right)}}}} =
+              \lim_{t\rightarrow  0 \pm }{
+                  (0.5+\sin{3t})^{\frac{1}{-\sin{t}}}} \\
+              \text{Рассмотрим отдельно при } t \rightarrow 0+ \text{ и } t \rightarrow 0- \\
+              \lim_{t\rightarrow  0- }{
+                  (0.5+\sin{3t})^{\frac{1}{-\sin{t}}}} =
+              \lim_{t\rightarrow  0- }{
+                  (0.5+3t+o(t))^{\frac{1}{-(t+o(t))}}} =
+              \lim_{t\rightarrow  0- }{
+                  (0.5+3t+o(t))^{\infty}} =
+              \lim_{t\rightarrow  0- }{
+                  (0.5)^{\infty}} = 0 \\
+              \lim_{t\rightarrow  0+ }{
+                  (0.5+\sin{3t})^{\frac{1}{-\sin{t}}}} =
+              \lim_{t\rightarrow  0+ }{
+                  (0.5+3t+o(t))^{\frac{1}{-(t+o(t))}}} =
+              \lim_{t\rightarrow  0+ }
+              (0.5+3t+o(t))^{-\infty} =
+              \lim_{t\rightarrow  0+ }
+              (0.5)^{-\infty} = +\infty
+          \end{gather*}
+          {\bf Ответ для $x\rightarrow \frac{\pi}{2}-0$: $0$, \\ для $x\rightarrow \frac{\pi}{2}+0$: $+\infty$}
+    \item
+          \begin{gather*}
+              \lim_{x\rightarrow  \frac{\pi}{2}}{
+                  \frac{2+\cos{x}\sin{\frac{2}{2x-\pi}}}{3+2x\sin{x}}} \\
+              \\
+              \lim_{x\rightarrow  \frac{\pi}{2}}{
+                  \frac{2+\cos{x}\sin{\frac{2}{2x-\pi}}}{3+2x\sin{x}}} =
+              \lim_{t\rightarrow  0}{
+                  \frac{2+\cos{(t+\frac{\pi}{2})}\sin{\frac{2}{2t+\pi-\pi}}}{3+2(t+\frac{\pi}{2})\sin{\left(t+\frac{\pi}{2}\right)}}} = \frac{2-\sin{t}\sin{\frac{2}{2t}}}{3+2(t+\frac{\pi}{2})\cos{t}} \\
+              \text{Функция: } \sin{\frac{1}{t}} \text{ - ограниченная, а } \sin{t} \text{ - бесконечно малая} \\ \text{Следовательно их произведение - бесконечно малая} \\
+              \text{Откуда. подставив $t = 0$, получим: } \\
+              \frac{2-0}{3+2(0+\frac{\pi}{2})\cos{(0)}} = \frac{2}{3+\pi}
+          \end{gather*}
+          {\bf Ответ: $\frac{2}{3+\pi}$}
+    \item
+          \begin{gather*}
+              \lim_{x\rightarrow  2}{
+                  \frac{\arctg{(x^2-3)}+\arctg{(x^2-5)}}{\ln{(x-1)}}
+              } \\
+              \lim_{x\rightarrow  2}{
+                  \frac{\arctg{(x^2-3)}+\arctg{(x^2-5)}}{\ln{(x-1)}}
+              } = 
+              \lim_{t\rightarrow  0}{
+                  \frac{\arctg{(t^2+4t+4-3)}+\arctg{(t^2+4t+4-5)}}{\ln{(t+1)}}
+              } =\\=
+              \lim_{t\rightarrow  0}{
+                  \frac{\arctg{(t^2+4t+1)}+\arctg{(t^2+4t-1)}}{\ln{(t+1)}}
+              } =
+              \lim_{t\rightarrow  0}{
+                  \frac{f_1(t)+f_2(t)}{h(t)}
+              }
+              \\
+              \text{Раскроем $arctg$ и $ln$ до первого порядка по формуле Тейлора, для этого посчитаем производные: } \\
+              f_1'(t)=\left(\arctg{(t^2+4t+1)}\right)' = \frac{2t+4}{1+(t^2+4t+1)^2} \\
+              f_2'(t)=\left(\arctg{(t^2+4t-1)}\right)' = \frac{2t+4}{1+(t^2+4t-1)^2} \\
+              h'(t)=\left(\ln{(t+1)}\right)' = \frac{1}{t+1} \\
+              \text{Подставим $t_0$:} \\
+              f_1(0) = \arctg{(0^2+4*0+1)} = \arctg{(1)} = \frac{\pi}{4} \\
+              f_2(0) = \arctg{(0^2+4*0-1)} = \arctg{(-1)} = -\frac{\pi}{4} \\
+              h(0) = \ln{(0+1)} = \ln{(1)} = 0 \\
+              f_1'(0) = \frac{2*0+4}{1+(0^2+0*t+1)^2} = \frac{4}{1+1^2} = 2 \\
+              f_2'(0) = \frac{2*0+4}{1+(0^2+0*t-1)^2} = \frac{4}{1+(-1)^2} = 2 \\
+              h'(0) = \frac{1}{0+1} = 1 \\
+              \text{Откуда:} \\
+              \lim_{t\rightarrow  0}{
+                  \frac{f_1(t)+f_2(t)}{h(t)}
+              } = 
+              \lim_{t\rightarrow  0}{
+                  \frac{\left(\frac{\pi}{4}+2t+o(t)\right)+\left(-\frac{\pi}{4}+2t+o(t)\right)}
+                  {0+t+o(t)}
+              } = 
+              \lim_{t\rightarrow  0}{
+                \frac{4t+o(t)}{t+o(t)}
+              } = 
+              \lim_{t\rightarrow  0}{
+                \frac{4+o(1)}{1+o(1)}
+              } = 4
+          \end{gather*}
+          {\bf Ответ: $4$}
+\end{enumerate}

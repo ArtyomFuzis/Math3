@@ -1,0 +1,29 @@
+\documentclass[fleqn, 12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[left=10mm, top=20mm, right=10mm, bottom=20mm]{geometry}
+\usepackage{lmodern}
+\usepackage{erewhon}
+\usepackage{multicol}
+\usepackage{txfonts}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+\fancyhf{}
+\fancyfoot[C]{\textbf{\thepage}}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+\begin{document}
+\input{title.tex }
+\setlength{\mathindent}{0.0pt}
+\tableofcontents
+\input{Задание 1.tex}
+\input{Задание 4.tex}
+\input{Задание 6.tex}
+\input{Задание 7.tex}
+\end{document}
