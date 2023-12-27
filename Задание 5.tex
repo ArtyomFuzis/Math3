@@ -1,0 +1,52 @@
+\newpage
+\section{Задание 5} 
+{\bf\large Условие} \\
+Провести полное исследование функций и построить их графики.
+\begin{enumerate}
+    \item 
+    \begin{equation*}
+        \begin{cases}
+            x = \frac{3t^2 +1}{3t} \\
+            y = t + \frac{t^2}{3}
+        \end{cases}
+    \end{equation*}
+    \item 
+    \[
+        y = \arccos{\frac{2x}{1+x^2}} - \frac{2x}{5}
+    \]
+    \item 
+    \[
+        y = (1-x)e^{3x+1}
+    \]
+\end{enumerate}
+{\bf\large Ход решения} \\
+\begin{enumerate}
+    \item 
+    \begin{equation*}
+        \begin{cases}
+            x = \frac{3t^2 +1}{3t} \\
+            y = t + \frac{t^2}{3}
+        \end{cases}
+    \end{equation*}
+    Найдем область определения функции $D(f)$: \\
+    $y(t)$ - существует всегда, рассмотрим чему не может равняться $x(t)$:\\
+    $x(t) = \frac{3t^2 +1}{3t} = t + \frac{1}{3t}$ - не достигает каких-то значений около нуля, найдем их через локальный минимум/максимум: \\
+    $x'(t) = 1 - \frac{1}{3t^2}$ - не существует в нуле как и сама функция $x(t)$,
+    $x'(t) = 0 \Rightarrow 1 - \frac{1}{3t^2} = 0 \Rightarrow t = \pm \sqrt{\frac{1}{3}}$ \\
+    Подставив различные значения, получим, что: $\frac{1}{\sqrt{3}}$ - лок. минимум, $-\frac{1}{\sqrt{3}}$ - лок. максимум \\
+    $x(\frac{1}{\sqrt{3}}) = \frac{2}{\sqrt{3}}$, $x(-\frac{1}{\sqrt{3}}) = -\frac{2}{\sqrt{3}}$ \\
+    То есть $D(f) = (-\infty,-\frac{2}{\sqrt(3)}] \cup [\frac{2}{\sqrt(3)},+\infty)$ \\
+    Найдем сначала асимптоты кривой. Будем искать наклонные асимптоты в виде $y = kx + b$. Переменная $x$ стремится к бесконечности, когда $t\rightarrow 0$ или $t\rightarrow \pm \infty$. 
+    При $t \rightarrow \pm \infty$ переменная $y$ тоже будет стремится к бесконечности, при этом: \\
+    \[
+        \lim_{t\rightarrow \infty }{\frac{y(t)}{x(t)}} = \lim_{t\rightarrow \infty }{\frac{3t(3t+t^2)}{3(3t^2+1)}}
+    \] 
+    \item 
+    \[
+        y = \arccos{\frac{2x}{1+x^2}} - \frac{2x}{5}
+    \]
+    \item 
+    \[
+        y = (1-x)e^{3x+1}
+    \]
+\end{enumerate}
