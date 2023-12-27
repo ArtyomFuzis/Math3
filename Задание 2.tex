@@ -1,0 +1,24 @@
+\newpage
+\section{Задание 2} 
+{\bf\large Условие} \\
+Доказать по определению предела функции в точке (по Коши):
+\[
+    \lim_{x\rightarrow11}{\frac{2x^2-21x-11}{x-11}}=23
+\]
+{\bf\large Ход решения} 
+Преобразуем выражение $\left|\frac{2x^2-21x-11}{x-11}-23\right|$:
+\[
+    \left|\frac{2x^2-21x-11}{x-11}-23\right|=\left|\frac{2x^2-21x-11-23x+253}{x-11}\right|=\left|\frac{2x^2-44x+242}{x-11}\right|=\left|\frac{2(x-11)^2}{x-11}\right|
+\]
+Так как при стремлении к $11$, $x$ в саму точку $11$ не попадает, то:
+\[
+    \left|\frac{2(x-11)^2}{x-11}\right| = 2\left|x-11\right|
+\]
+Возьмем $\varepsilon$ > 0 и найдем решения неравенства:
+\[
+    \left|\frac{2x^2-21x-11}{x-11}-23\right| = 2\left|x-11\right| < \varepsilon
+\]
+\[    
+    \left|x-11\right| < \frac{\varepsilon}{2}
+\]
+Получается, что из неравенства $\left|x-11\right| < \frac{\varepsilon}{2}$ следует $\left|\frac{2x^2-21x-11}{x-11}-23\right| < \varepsilon$, то есть выполнено определение предела по Коши для $\delta =  \frac{\varepsilon}{2}$. ч.т.д.

@@ -1,0 +1,19 @@
+\newpage
+\section{Задание 3} 
+{\bf\large Условие} \\
+Доказать, что данный предел не существует:
+\[
+    \lim_{x\rightarrow\infty}{\ctg{(1+x^2)}}
+\]
+{\bf\large Ход решения} \\
+Рассмотрим некоторые последвательности $x_n$ удовлетворяющие первой части определения по Гейне, то есть такие что:
+\begin{equation*}
+    \begin{cases}
+        x_n \in D(f) \text{ (Область определения)} \\
+        x_n \rightarrow +\infty
+    \end{cases}
+\end{equation*}
+Например: $y_n = \sqrt{\frac{\pi}{4}+\pi n -1}$ и $a_n = \sqrt{\frac{3\pi}{4}+\pi n -1}$. К тому же $n\geq1\Rightarrow y_n,a_n\geq 0$. \\
+Получается $\ctg{(1+y_n^2)}= \ctg{\left(1+\left(\sqrt{\frac{\pi}{4}+\pi n -1}\right)^2\right)}=\ctg{\left(1+\frac{\pi}{4}+\pi n -1\right)}=\ctg{\left(\frac{\pi}{4}+\pi n\right)}=\ctg{\frac{\pi}{4}}=const=1$\\
+А $\ctg{(1+a_n^2)} = \ctg{\left(1+\left(\sqrt{\frac{3\pi}{4}+\pi n -1}\right)^2\right)}=\ctg{\left(1+\frac{3\pi}{4}+\pi n -1\right)}=\ctg{\left(\frac{3\pi}{4}+\pi n\right)}=\ctg{\frac{3\pi}{4}}=const=-1$\\
+То есть мы взяли две последовательности из определения по Гейне и получили, что они стремятся к разным числам, что напрямую этому определению противоречит, следовательно предела - нет. ч.т.д. 
